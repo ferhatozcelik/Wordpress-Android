@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/articleFragment">
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="org.ferhatozcelik.ui.fragments.article.ArticleFragment"
+        android:label="Article Fragment"
+        tools:layout="@layout/fragment_article">
+        <action
+            android:id="@+id/action_articleFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <action
+            android:id="@+id/action_articleFragment_self3"
+            app:destination="@id/articleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="org.ferhatozcelik.ui.fragments.videos.VideosFragment"
+        android:label="Videos Fragment"
+        tools:layout="@layout/fragment_videos">
+        <action
+            android:id="@+id/action_videosFregment_self"
+            app:destination="@id/videosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="org.ferhatozcelik.ui.fragments.articledetail.ArticleDetailFragment"
+        android:label="Article Detail Fragment"
+        tools:layout="@layout/fragment_detail_article" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="org.ferhatozcelik.ui.fragments.contact.ContactFragment"
+        android:label="Contact Fragment"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFragment_self"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/markedFragment"
+        android:name="org.ferhatozcelik.ui.fragments.marked.MarkedFragment"
+        android:label="Marked Fragment"
+        tools:layout="@layout/fragment_marked" >
+        <action
+            android:id="@+id/action_markedFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <action
+            android:id="@+id/action_markedFragment_self"
+            app:destination="@id/markedFragment" />
+    </fragment>
+
+</navigation>
