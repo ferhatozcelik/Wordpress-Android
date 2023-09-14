@@ -1,6 +1,6 @@
 # Wordpress Mobile App
 
-The App is using the [Dictionary Api] to translate word.
+WordPress for Android is a mobile app developed by the WordPress community that allows users to manage and publish content on their WordPress websites from their Android devices. It provides a convenient way for bloggers, website administrators, and content creators to stay connected with their WordPress sites while on the go. Here are some key features and functions of the WordPress for Android app
 
 ### Build With 🏗️
 - [Kotlin] - Programming language for Android
